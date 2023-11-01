@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL AGENCY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="travel">
+        <div id="travel__head" class="hidden--center">
+            <div>
+                <div id="travel__subHead">
+                    <div class="head__logo">
+                        <a href="#" class="head__logo--link"><img src="./index-img/logo.png" alt="Logo Travel Agency"
+                                class="head__logo--img"></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="VE_ETRAVEL_TOURS.html">VỀ ETRAVEL TOURS</a></li>
+                            <li><a href="#">TOURS CHÂU Á</a></li>
+                            <li><a href="#">TOURS CHÂU ÂU</a></li>
+                            <li><a href="#">TOURS CHÂU MĨ</a></li>
+                            <li><a href="camNang.html">CẨM NANG DU LỊCH</a></li>
+                        </ul>
+                    </div>
+                    <div class="head__holine">
+                        <div class="holine__item--icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="holine__item--text">
+                            <span>HOTLINE</span> <br>
+                            <a href="">036 482 8548</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="travel__body">
+            <div id="body--img">
+                <a href="#"><img id="slide1" src="./index-img/slide 1.jpg" alt="Image"></a>
+                <div class="chevron">
+                    <div class=" arrow arrow--left" onclick="back('slide1','box',img)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class=" arrow arrow--right" onclick="next('slide1','box',img)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="box" onclick="press('slide1','box','0',img)"></div>
+                    <div class="box" onclick="press('slide1','box','1',img)"></div>
+                </div>
+            </div>
+            <div id="body--tour" class="hidden--center">
+                <div class="width1170 pad30-50">
+                    <h3 class="text--center head--title" style="color: #333333;">Dịch vụ tốt nhất của ETravel Tours</h3>
+                    <div class="tour--container">
+                        <div class="tour--item">
+                            <a href="">
+                                <img src="./index-img/img 1.jpg" alt="Tour Châu Âu">
+                            </a>
+                            <a href="" class="text--center">Tour Châu Âu</a>
+                        </div>
+                        <div class="tour--item">
+                            <a href="">
+                                <img src="./index-img/img 2.jpg" alt="Tour Châu Á">
+                            </a>
+                            <a href="" class="text--center">Tour Châu Á</a>
+                        </div>
+                        <div class="tour--item">
+                            <a href="">
+                                <img src="./index-img/img 3.jpg" alt="Tour Châu Mỹ">
+                            </a>
+                            <a href="" class="text--center">Tour Châu Mỹ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="body--hot" class="hidden--center">
+                <div class="width1170">
+                    <h3 class="text--center head--title" style="color:#ffffff">
+                        Tour du lịch Châu Âu khuyến mãi - hot
+                    </h3>
+                    <div class="list--tour">
+                        <div id="list--tour1">
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 4.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Du lịch Châu Âu (Ý - Thụy Sĩ - Pháp)</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        NGÀY 1: TP.HCM - DOHA (QATAR)Quý khách tự túc tập trung tại lầu 2 - Ga đi quốc
+                                        tế sân bay Tân Sơn Nhất,…
+                                    </div>
+                                    <div class="item--price">
+                                        90,990,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 5.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Khám phá đất nước Cuba cổ kính</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Ngày 1: Hà Nội – New York. Sáng: Xe và HDV đón quý khách tại địa điểm đã hẹn
+                                        trước ra sân bay làm một…
+                                    </div>
+                                    <div class="item--price">
+                                        93,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 6.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Tour du lịch bờ Tây nước Mỹ 8 ngày từ Hà Nội 2019</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Ngày 01: Hà Nội - San Francisco (Ăn Trưa MB, Tối) 09h30: Toàn đoàn tập kết tại
+                                        sân bay Nội Bài và làm…
+                                    </div>
+                                    <div class="item--price">
+                                        39,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 7.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Lạc Lối Ở Đài Bắc Trong 3 Ngày 2 Đêm - Bạn Muốn Thử Không?</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Đài Loan là địa điểm du lịch lý tưởng để bạn vừa có thể cảm nhận nhịp sống thành
+                                        phố năng động, hiện…
+                                    </div>
+                                    <div class="item--price">
+                                        5,600,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 8.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Tour Bắc Âu: Đan Mạch - Na Uy - Thụy Điển - Phần Lan 2019</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Ngày 01: Hà Nội - Copenhagen (Ăn Nghỉ MB) 18h30: Xe và Hướng dẫn viên đón Quý
+                                        khách tại điểm hẹn, khởi…
+                                    </div>
+                                    <div class="item--price">
+                                        79,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 9.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Du lịch Đông Tây Canada 10 ngày từ Hà Nội năm 2019</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Ngày 01: Hà Nội - Toronto (Ăn trên MB) 08h30:&nbsp;Tập trung tại điểm hẹn trong
+                                        thành phố Hà Nội để xe đón…
+                                    </div>
+                                    <div class="item--price">
+                                        83,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 10.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Tour Thái Lan - Bangkok - Pattaya Trong 5 Ngày 4 Đêm</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Lịch trình tours Ngày 1: HA NOI – BANGKOK (Ăn tối) Xe ô tô đón Quý khách tại
+                                        điểm hẹn Nhà…
+                                    </div>
+                                    <div class="item--price">
+                                        6,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 11.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Du lịch Châu Âu (Ý - Thụy Sĩ - Pháp)</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        NGÀY 1: TP.HCM - DOHA (QATAR)Quý khách tự túc tập trung tại lầu 2 - Ga đi quốc
+                                        tế sân bay Tân Sơn Nhất,…
+                                    </div>
+                                    <div class="item--price">
+                                        90,990,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 4.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Du lịch Châu Âu (Ý - Thụy Sĩ - Pháp)</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        NGÀY 1: TP.HCM - DOHA (QATAR)Quý khách tự túc tập trung tại lầu 2 - Ga đi quốc
+                                        tế sân bay Tân Sơn Nhất,…
+                                    </div>
+                                    <div class="item--price">
+                                        90,990,000đ
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 12.png" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Tour Scotland - Anh Quốc</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Ngày 1: Việt Nam – London. Tối: Xe đưa đón đoàn tại trung tâm thành phố và đưa
+                                        ra sân bay quốc tế làm…
+                                    </div>
+                                    <div class="item--price">
+                                        75,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 13.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Khám phá đất nước Cuba cổ kính</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Ngày 1: Hà Nội – New York. Sáng: Xe và HDV đón quý khách tại địa điểm đã hẹn
+                                        trước ra sân bay làm một…
+                                    </div>
+                                    <div class="item--price">
+                                        93,900,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list--item">
+                                <div class="item--img">
+                                    <img src="./index-img/img 14.jpg" alt="">
+                                    <div class="item--title">
+                                        <a href="">Xem</a>
+                                    </div>
+                                </div>
+                                <div class="item--text">
+                                    <a href="">
+                                        <span>Lạc Lối Ở Đài Bắc Trong 3 Ngày 2 Đêm - Bạn Muốn Thử Không?</span>
+                                    </a>
+                                    <div class="item--mota">
+                                        Đài Loan là địa điểm du lịch lý tưởng để bạn vừa có thể cảm nhận nhịp sống thành
+                                        phố năng động, hiện…
+                                    </div>
+                                    <div class="item--price">
+                                        5,600,000đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="point point1">
+                        <div class="box box1 box2" onclick="press1('box1','0',tour__item,'3')"></div>
+                        <div class="box box1" onclick="press1('box1','1',tour__item,'3')"></div>
+                        <div class="box box1" onclick="press1('box1','2',tour__item,'3')"></div>
+                        <div class="box box1" onclick="press1('box1','3',tour__item,'3')"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="body--why" class="hidden--center">
+                <div class="width1170 pad30-50">
+                    <h3 class="text--center head--title">
+                        Vì sao chọn tour Châu Âu - ETravel Tour
+                    </h3>
+                    <div class="tour--container">
+                        <div class="why--img">
+                            <img class="pad15" src="./index-img/img 15.jpg" alt="why--img">
+                        </div>
+                        <div class="why--text pad15">
+                            <p class="font16">
+                                Tận tâm, am hiểu, chuyên nghiệp
+                                <br>
+                                Với sự tận tâm, am hiểu, chuyên nghiệp, quý khách luôn có được hành trình tốt nhất, phù
+                                hợp nhất, với chi phí tiết kiệm nhất
+                                <br>
+                                <br>
+                                Chứng nhận dịch vụ xuất sắc từ Tripadvisor
+                                <br>
+                                100% khách hàng hài lòng với dịch vụ của Dế Việt (AsiaLink ETravel) theo đánh giá từ
+                                website du lịch lớn nhất thế giới, Tripadvisor
+                                <br>
+                                <br>
+                                Tư vấn miễn phí và hỗ trợ 24/7
+                                <br>
+                                Sẵn sàng tư vẫn miễn phí và luôn song hành cùng khách hàng trong suốt thời gian thăm
+                                quan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="body--feedback" class="hidden--center">
+                <div class="width1170 pad30-50" style="padding-bottom: 60px;">
+                    <h3 class="text--center head--title" style="color:#ffffff">
+                        Phản hồi của khách hàng
+                    </h3>
+                    <div class="feed--item disfex" id="feed--item1">
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                “Mình đã từng sử dụng dịch vụ của vài công ty du lịch trong nước nhưng đến với ETravel
+                                Tours, mình đã có một trải nghiệm hoàn toàn mới nhờ sự thân thiện, nhiệt tình, vui vẻ
+                                của đội ngũ hướng dẫn viên, đem lại cho mình một chuyến đi tràn đầy niềm vui và ý nghĩa.
+                                Mình hiểu rõ hơn về đất nước và con người, phong tục tập quán của nơi mình đã đặt chân
+                                tới. Mình hy vọng trong thời gian tới sẽ có cơ hội đồng hành cùng Quý công ty khám phá
+                                những quốc gia khác.”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 1.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Hoàng Hùng</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                “Trong chuyến đi này, gia đình chúng tôi gặp sự cố tai nạn bất ngờ nhưng nhờ sự hỗ trợ
+                                và giúp đỡ nhanh chóng nhiệt tình của anh hướng dẫn viên nên mọi việc cũng đã thu xếp
+                                được ổn thỏa và giúp chúng tôi yên tâm hơn. Mong rằng công ty luôn duy trì được thế mạnh
+                                này để những hành khách như gia đình tôi luôn yên tâm lựa chọn Quý công ty là người bạn
+                                đồng hành trong những chuyến đi mới tiếp theo.”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 2.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Nguyễn Thị Mai</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                Tour Châu Âu linh hoạt thời gian và địa điểm, dễ dàng kết hợp tham quan du lịch và thăm
+                                thân nhân tại các nước Châu Âu. Mình đi 2 line red và green, rất vui và không mệt. Hướng
+                                dẫn viên tiếng Việt nhiệt tình, thân thiện. Lịch trình đi hầu hết các điểm du lịch nổi
+                                tiếng của từng nước. Chúc Cty ngày càng có thêm nhiều khách biết đến và sử dụng dịch vụ,
+                                mở rộng đc thị trường du lịch Châu Âu cho du khách Việt...
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 3.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Hoàng Hùng</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                “Trong chuyến đi này, gia đình chúng tôi gặp sự cố tai nạn bất ngờ nhưng nhờ sự hỗ trợ
+                                và giúp đỡ nhanh chóng nhiệt tình của anh hướng dẫn viên nên mọi việc cũng đã thu xếp
+                                được ổn thỏa và giúp chúng tôi yên tâm hơn. Mong rằng công ty luôn duy trì được thế mạnh
+                                này để những hành khách như gia đình tôi luôn yên tâm lựa chọn Quý công ty là người bạn
+                                đồng hành trong những chuyến đi mới tiếp theo.”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 4.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Nguyễn Mai</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                “Đây là lần đầu tiên tôi đi du lịch qua ETravel Tours, cảm nhận của tôi về toàn bộ
+                                chuyến đi rất tốt. Mặc dù đã đi Nha Trang nhiều lần nhưng tôi cảm thấy vẫn rất thích và
+                                muốn tiếp tục đi nữa để khám phá những điểm đến mới thông qua chương trình tham quan của
+                                Quý công ty. Ngoài ra Hướng dẫn viên cũng thăm hỏi đến từng thành viên trong đoàn về
+                                điều kiện ăn, ngủ….”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 2.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Nguyễn Ngọc Mai</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+
+                                “Hướng dẫn viên Đạt rất chu đáo, nhiệt tình tạo cảm giác thoải mái, tuyệt vời cho gia
+                                đình trong chuyến tham quan. Gia đình tôi cảm thấy rất vui và hài lòng khi có được một
+                                chuyến tham quan cùng Du Lịch Việt, cùng Hướng dẫn viên Đạt. Dịch vụ của ETravel Tours
+                                cũng tốt, tạo cảm giác vui và mát mẻ khi về Miền Tây. Gia đình tôi sẽ cùng đồng hành với
+                                Hướng dẫn viên Đạt và ETravel Tours trong thời gian sắp tới.”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 1.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Phùng Ngọc</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+
+                                “Hướng dẫn viên Đạt rất chu đáo, nhiệt tình tạo cảm giác thoải mái, tuyệt vời cho gia
+                                đình trong chuyến tham quan. Gia đình tôi cảm thấy rất vui và hài lòng khi có được một
+                                chuyến tham quan cùng Du Lịch Việt, cùng Hướng dẫn viên Đạt. Dịch vụ của ETravel Tours
+                                cũng tốt, tạo cảm giác vui và mát mẻ khi về Miền Tây. Gia đình tôi sẽ cùng đồng hành với
+                                Hướng dẫn viên Đạt và ETravel Tours trong thời gian sắp tới.”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 5.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Phùng Ngọc</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                “Trong chuyến đi này, gia đình chúng tôi gặp sự cố tai nạn bất ngờ nhưng nhờ sự hỗ trợ
+                                và giúp đỡ nhanh chóng nhiệt tình của anh hướng dẫn viên nên mọi việc cũng đã thu xếp
+                                được ổn thỏa và giúp chúng tôi yên tâm hơn. Mong rằng công ty luôn duy trì được thế mạnh
+                                này để những hành khách như gia đình tôi luôn yên tâm lựa chọn Quý công ty là người bạn
+                                đồng hành trong những chuyến đi mới tiếp theo.”
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 2.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Nguyễn Thị Mai</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item1">
+                            <div class="feed--top">
+                                Tour Châu Âu linh hoạt thời gian và địa điểm, dễ dàng kết hợp tham quan du lịch và thăm
+                                thân nhân tại các nước Châu Âu. Mình đi 2 line red và green, rất vui và không mệt. Hướng
+                                dẫn viên tiếng Việt nhiệt tình, thân thiện. Lịch trình đi hầu hết các điểm du lịch nổi
+                                tiếng của từng nước. Chúc Cty ngày càng có thêm nhiều khách biết đến và sử dụng dịch vụ,
+                                mở rộng đc thị trường du lịch Châu Âu cho du khách Việt...
+                            </div>
+                            <div class="feed--bottom disfex">
+                                <div class="feed--img">
+                                    <img src="./index-img/kh 3.jpg" alt="Khách hàng">
+                                </div>
+                                <div class="feed--name pad15">
+                                    <div>Hoàng Hùng</div>
+                                    <div>12/10/2023</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="point point1">
+                        <div class="box box1 box2 box3" onclick="press1('box3','0',feed__item1,'3')"></div>
+                        <div class="box box1 box3" onclick="press1('box3','1',feed__item1,'3')"></div>
+                        <div class="box box1 box3" onclick="press1('box3','2',feed__item1,'3')"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="body--staff" class="hidden--center">
+                <div class="width1170 pad30-50">
+                    <h3 class="text--center head--title" style="color:#ffffff">
+                        Đội ngũ chuyên viên
+                    </h3>
+                    <div class="staff--item disfex" id="staff--item2">
+                        <div class="staff--item1">
+                            <div class="staff--img">
+                                <img src="./index-img/nv 1.jpg" alt="Hình ảnh nhân viên">
+                            </div>
+                            <div class="staff--info">
+                                <div class="staff-name text--center">
+                                    Phùng Huy
+                                </div>
+                                <div class="staff--job text--center">
+                                    <p>
+                                        Với gần 10 năm kinh nghiệm trong ngành du lịch và là người năng động, Huy đã đi
+                                        du lịch nhiều nơi trên thế giới.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff--item1">
+                            <div class="staff--img">
+                                <img src="./index-img/nv 2.jpg" alt="Hình ảnh nhân viên">
+                            </div>
+                            <div class="staff--info">
+                                <div class="staff-name text--center">
+                                    Minh Ngọc
+                                </div>
+                                <div class="staff--job text--center">
+                                    <p>
+                                        Hơn 10 năm kinh nghiệm trực tiếp đón khách Việt Nam thăm quan, làm việc tại Pháp
+                                        và Châu Âu. Chị hiện là đại diện của ETravel Tours tại Pháp.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff--item1">
+                            <div class="staff--img">
+                                <img src="./index-img/nv 3.jpg" alt="Hình ảnh nhân viên">
+                            </div>
+                            <div class="staff--info">
+                                <div class="staff-name text--center">
+                                    Thu Hương
+                                </div>
+                                <div class="staff--job text--center">
+                                    <p>
+                                        Sau 3 năm sinh sống và đón khách Việt Nam thăm quan Ý và Châu Âu, Đạt hiện là
+                                        đại diện của ETravel Tours tại Ý từ năm 2015
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff--item1">
+                            <div class="staff--img">
+                                <img src="./index-img/nv 4.jpg" alt="Hình ảnh nhân viên">
+                            </div>
+                            <div class="staff--info">
+                                <div class="staff-name text--center">
+                                    Phùng Trang
+                                </div>
+                                <div class="staff--job text--center">
+                                    <p>
+                                        Với hơn 10 năm kinh nghiệm trong lĩnh vực quản trị du lịch và lữ hành quốc tế,
+                                        Trang hiện là nhân viên tư vấn củaETravel Tours tại Hà Nội
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff--item1">
+                            <div class="staff--img">
+                                <img src="./index-img/nv 5.jpg" alt="Hình ảnh nhân viên">
+                            </div>
+                            <div class="staff--info">
+                                <div class="staff-name text--center">
+                                    Hoàng Hùng
+                                </div>
+                                <div class="staff--job text--center">
+                                    <p>
+                                        Với hơn 20 năm kinh nghiệm làm lữ hành quốc tế, Hà hiện phụ trách mảng khách
+                                        hàng cao cấp và khách hàng VIP của Dế Việt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff--item1">
+                            <div class="staff--img">
+                                <img src="./index-img/nv 6.jpg" alt="Hình ảnh nhân viên">
+                            </div>
+                            <div class="staff--info">
+                                <div class="staff-name text--center">
+                                    Thu Huyền
+                                </div>
+                                <div class="staff--job text--center">
+                                    <p>
+                                        Với gần 3 năm kinh nghiệm trong ngành quản trị khách sạn và du lịch, Huyền hiện
+                                        là giám sát bộ phận chăm sóc khách hàng và chuyên gia trực tiếp xử lý các dịch
+                                        vụ visa châu Âu và quốc tế.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="point point1">
+                        <div class="box box1 box2 box3 box4" onclick="press1('box4','0',staff__item1,'4')"></div>
+                        <div class="box box1 box3 box4" onclick="press1('box4','1',staff__item1,'4')"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="body--blog" class="hidden--center">
+                <div class="width1170 pad30-50" style="padding-bottom: 0;">
+                    <h3 class="text--center head--title" style="color: #333333;">Blog - Cẩm nang du lịch Châu Âu</h3>
+                    <div class="tour--container">
+                        <div class="tour--item">
+                            <a href="">
+                                <img src="./index-img/img 16.jpg" alt="Du lịch bụi châu Á nên đi đâu?">
+                            </a>
+                            <a href="" class="text--center col337AB7">Du lịch bụi châu Á nên đi đâu?</a>
+                        </div>
+                        <div class="tour--item">
+                            <a href="">
+                                <img src="./index-img/img 17.jpg"
+                                    alt="Một số thủ tục cần thiết khi xin visa du lịch châu Âu">
+                            </a>
+                            <a href="" class="text--center col337AB7">Một số thủ tục cần thiết khi xin visa du lịch châu
+                                Âu</a>
+                        </div>
+                        <div class="tour--item">
+                            <a href="">
+                                <img src="./index-img/img 18.jpg" alt="Các thủ tục cần thiết khi xin VISA Hoa Kỳ">
+                            </a>
+                            <a href="" class="text--center col337AB7">Các thủ tục cần thiết khi xin VISA Hoa Kỳ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="body--contact" class="hidden--center">
+                <div class="width1170">
+                    <div class="contact disfex">
+                        <div class="contact--left">
+                            <div class="contact--left--text">
+                                <div class="text--left1">
+                                    Đăng ký nhận tin
+                                </div>
+                                <p>
+                                    <i class="fa-solid fa-square-phone"></i>
+                                    036 482 8548
+                                </p>
+                                <p>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    20222574@eaut.edu.vn
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact--right">
+                            <div class="contact--form">
+                                <h3 class="head--title text--center head--form">
+                                    Để lại thông tin của bạn để được tư vấn từ ETravel Tours
+                                </h3>
+                                <br>
+                                <form action="">
+                                    <table cellspacing="12px">
+                                        <thead>
+                                            <tr>
+                                                <th>Tên</th>
+                                                <th>Email</th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input class="form--inp" required type="text" placeholder="Tên">
+                                                </th>
+                                                <th>
+                                                    <input class="form--inp" required type="text" placeholder="Email">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Điện thoại</th>
+                                                <th>Nước bạn muốn đi</th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input class="form--inp" required type="text"
+                                                        placeholder="Điện thoại">
+                                                </th>
+                                                <th>
+                                                    <input class="form--inp" required type="text"
+                                                        placeholder="Nước bạn muốn đi">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Số người</th>
+                                                <th>Ngày đi dự kiến</th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input class="form--inp" required type="text"
+                                                        placeholder="Số người">
+                                                </th>
+                                                <th>
+                                                    <input class="form--inp" required type="text"
+                                                        placeholder="Ngày đi dự kiến">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Ngày về dự kiến</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <input class="form--inp" required type="text"
+                                                        placeholder="Ngày về dự kiến">
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <button class="btn1">Đăng ký</button>
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="travel__foot">
+            <div id="travel__foot--top" class="hidden--center">
+                <div class="container">
+                    <div class="foot--top container--item" style="padding-left: 4px;">
+                        <h3 class="foot--title">ETravel Tours</h3>
+                        <div class="foot--line">
+                            Chúng tôi hệ thống dịch vụ theo chuẩn chất lượng chung, đồng bộ, cam kết đưa đến cho khách
+                            hàng những sản phẩm du lịch chất lượng tốt với giá cạnh tranh. Với hơn 500 tour có trên
+                            Website, khởi hành ...
+                        </div>
+                    </div>
+                    <div class="foot--top container--item">
+                        <h3 class="foot--title">Liên hệ</h3>
+                        <div class="foot--line">
+                            <p>
+                                <i class="fa-solid fa-house"></i>
+                                <span><strong>Địa chỉ: </strong></span>
+                                <span>P. Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội</span>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <span><strong>Điện thoại: </strong></span>
+                                <span> 036 482 8548</span>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span><strong>Email: </strong></span>
+                                <span> 20222574@eaut.edu.vn</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="link--foot">
+                        <a href="">Hồ sơ năng lực</a><br>
+                        <a href="">Chính sách</a><br>
+                        <a href="">Liên hệ</a>
+                    </div>
+                    <div>
+                        <h3 class="foot--title">Google Map</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8168145559566!2d105.7393833750007!3d21.040014487392355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1697100882189!5m2!1svi!2s"
+                            width="250" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <h3 class="foot--title">Page Facebook</h3>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftravelagency04&tabs&width=250&height=190&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="250" height="190" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="travel__mess">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+
+            <div id="travel__back">
+                <a href="#travel__body">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+        <div id="travel__foot--bottom" class="hidden--center">
+            <div>
+                <p>© Copyright 2022-2026 ETravel Tours.</p>
+            </div>
+        </div>
+</body>
+
+</html>
